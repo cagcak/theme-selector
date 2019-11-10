@@ -1,6 +1,25 @@
 {
   "name": "theme-selector",
+  "description": "Angular multiple theme selector library component",
   "version": "0.0.0",
+  "author": "Çağrı Çakır <cagcak@outlook.com> (https://github.com/cagcak)",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cagcak/theme-selector.git"
+  },
+  "keywords": [
+    "angular",
+    "user-selections",
+    "theme",
+    "component-library"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cagcak/theme-selector/issues"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -24,6 +43,8 @@
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "~0.803.18",
+    "@angular-devkit/build-ng-packagr": "~0.803.18",
     "@angular/cli": "~8.3.18",
     "@angular/compiler-cli": "~8.2.13",
     "@angular/language-service": "~8.2.13",
@@ -38,8 +59,10 @@
     "karma-coverage-istanbul-reporter": "~2.0.1",
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.0",
+    "ng-packagr": "^5.4.0",
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
+    "tsickle": "^0.37.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
   }
