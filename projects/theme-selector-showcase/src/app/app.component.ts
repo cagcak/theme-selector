@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ThemeSelectorService } from 'projects/theme-selector/src/public-api';
 
 @Component({
   selector: 'app-root',
@@ -9,15 +8,6 @@ import { ThemeSelectorService } from 'projects/theme-selector/src/public-api';
 export class AppComponent {
   title = 'theme-selector-showcase';
 
-  constructor(
-    private themeService: ThemeSelectorService
-  ) { }
+  constructor() { }
 
-  switchToDarkTheme() {
-    this.themeService.createDarkTheme();
-  }
-
-  switchToLightTheme() {
-    this.themeService.createLightTheme();
-  }
 }

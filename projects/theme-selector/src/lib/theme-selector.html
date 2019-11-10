@@ -1,7 +1,21 @@
-<div
+<button
     class="th-menu"
     *ngIf="(themePicker$ | async) as themePicker"
-    [ngStyle]="{ background: themePicker.color }"
+    libThemeSelectorMenu
+    (click)="toggle = !toggle"
 >
-    <strong>{{ themePicker.$name }}</strong>
-</div>
+    <div 
+        class="theme-icon"
+        [ngStyle]="{'backgroundColor': themePicker.$icon.iconBackground$}"
+    ></div> {{ themePicker.$name }}
+</button>
+<ul class="menuList" [ngClass]="{'active': toggle, 'passive': !toggle}">
+    <li
+        class="th-menu-item"
+        *ngFor="let theme of themes; let i=index"
+    >
+        <button (click)="themeSelect(i)">
+            {{ theme.$name }}
+        </button>
+    </li>
+</ul>

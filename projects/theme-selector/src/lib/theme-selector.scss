@@ -1,4 +1,27 @@
 $cl: #333;
-.tests {
-    color: $cl;
+
+.theme-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.menuList {
+    margin: 0 auto;
+    transition: all cubic-bezier(0.68, -0.55, 0.27, 1.55) 1s;
+    & li {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-items: center;
+        text-decoration: none;
+        list-style: none;
+        max-width: 100px;
+    }
+    &.active {
+        opacity: 1;
+    }
+    &.passive {
+        opacity: 0;
+    }
 }
