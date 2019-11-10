@@ -35,7 +35,10 @@ jobs:
       - run:
           name: Linting
           command: npm run lint
-      # Test the source code
+      # Headless Chrome Node.js API setup for karma
+      - run:
+          name: puppeteer
+          command: npm i --save-dev puppeteer
       - run:
           name: Testing
           command: npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI

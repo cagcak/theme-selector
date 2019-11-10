@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/cagcak/theme-selector.svg?style=svg)](https://circleci.com/gh/cagcak/theme-selector)
+[![CircleCI](https://circleci.com/gh/cagcak/theme-selector.svg?style=svg&circle-token=ac4b11ea424ccd870ca5ea8ed13b527e4e2d2b39)](https://circleci.com/gh/cagcak/theme-selector)
 
 # ThemeSelector
 
