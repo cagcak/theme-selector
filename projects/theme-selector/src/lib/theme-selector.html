@@ -1,0 +1,7 @@
+<div
+    class="th-menu"
+    *ngIf="(themePicker$ | async) as themePicker"
+    [ngStyle]="{ background: themePicker.color }"
+>
+    <strong>{{ themePicker.$name }}</strong>
+</div>

@@ -1,19 +1,20 @@
 import { Component, OnInit } from '@angular/core';
+import { Theme, ThemeSelectorService } from './theme-selector.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'lib-theme-selector',
-  template: `
-    <p>
-      theme-selector works!
-    </p>
-  `,
-  styles: []
+  templateUrl: 'theme-selector.html',
+  styleUrls: ['theme-selector.scss']
 })
 export class ThemeSelectorComponent implements OnInit {
 
-  constructor() { }
+  themePicker$: Observable<Theme | boolean>;
+
+  constructor(private themeService: ThemeSelectorService) { }
 
   ngOnInit() {
+    this.themePicker$ = this.themeService.themePicker$;
   }
 
 }
